@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organ Donation: FAQ</title>
+  <!-- <link rel="stylesheet" type="text/css" href="form.css"> -->
+  <style>
+    body{
+    background-color: white ;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+    *{
+      box-sizing: border-box;
+    }
+    /* navbar  */
+    .navbar {
+    background-color: #20A0D8;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .navbar ul {
+    overflow: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    list-style: none;
+    margin: 12px 12px;
+  }
+  
+  .navbar li a {
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a.activa {
+    color: white;
+  }
+  
+  /* faq  */
+  .box{
+    height: 48px;
+    background-color: #a4dcf5;
+    margin: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+  } 
+
+  .box-opened{
+    background-color:  ;
+  }
+  .active, .box:hover{
+    background-color: #20A0D8;
+    color: white;
+  }
+ 
+  .text{
+    padding: 14px;
+    margin-left: 7px;
+  }
+
+  .main li{
+    list-style: none;
+  }
+  .heading{
+    font-size: 27px;
+     text-align: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  .para{
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+  .main{
+     width: 97%;
+     margin-top:20px;
+  }
+
+  .panel p{
+    background-color: rgb(233, 231, 231);
+     height: 62px;
+     padding: 10px;
+  }
+
+  .panel{
+   /* display: none; */
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em;
+  }
+  .panel-opened{
+   padding: 0em .5em .5em .5em;
+   height: initial;     /* changes to 80px */
+  }
+
+  
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="./Home.html">Home</a></li>
+      <li><a href="./services .html">Services</a></li>
+      <li><a href="#" class="activa">FAQ'S</a></li>       <!-- NOTE: i changed active to activa here  -->
+      <li><a href="./Register Here.html">Register Here</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="./Get Involved.html">Get Involved</a></li>
+      <li><a href="./contact us.html">Contact Us</a></li>
+    </ul>
+  </header>
+  <h2 class="heading">Frequently Asked Questions</h2>
+  <p class="para">Some of the frequently asked questions are here to answer your queries.</p>
+
+    <ul class="main">
+      <li>
+        <div class="box"><p class="text">What is organ donation?</p></div>
+        <div class="panel"><p>Organ donation is the process of surgically removing an organ or tissue from one person (the organ donor) and placing it into another person (the recipient). Transplantation is necessary because the recipient’s organ has failed or has been damaged by disease or injury.</p></div>
+          </li> 
+
+          <li>
+            <div class="box"><p class="text">Why should I donate?</p></div>
+            <div class="panel"><p> Organ donors are always in short supply. There are far more people in need of a transplant than there are people willing to donate an organ. Hence one should always try to donate and encourage others who are capavle of donating.</p></div>
+              </li> 
+      <li>
+    <div class="box"><p class="text">Who can be a donar?</p></div>
+    <div class="panel"><p>In general, individuals who are in good health and meet certain criteria can be organ donors.It is important to note that medical professionals evaluate each potential donor individually to determine their suitability for organ donation. Additionally, specific criteria and regulations may vary between countries and even between healthcare institutions.</p></div>
+      </li>  
+      
+      <li>
+    <div class="box"><p class="text">What organs can be donated?</p></div>
+    <div class="panel"><p>Liver, kidneys, heart, lungs, pancreas, intestines and cornea are the commonly donated organs. </p></div>
+      </li>    
+    </ul> 
+
+
+
+  <script>
+
+    const box=document.querySelectorAll('.box');
+    const panel=document.querySelectorAll('.panel');
+
+    for(let i=0; i<box.length; i++){
+      box[i].addEventListener('click', () =>{
+           panel[i].classList.toggle('panel-opened');
+      }
+    );
+    }
+
+
+
+  </script>
+  </body>
+</head>

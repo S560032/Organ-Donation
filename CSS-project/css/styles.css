@@ -1,0 +1,97 @@
+body{
+    background-color: white ;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar {
+    background-color: #20A0D8;
+    border-radius: 20px;
+    margin-bottom: 20px;
+ }
+  
+.navbar ul {
+    overflow: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+ }
+  
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    margin: 12px 12px;
+}
+  
+.navbar li a {
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    transition: 0.3s;
+    color: white;
+}
+  
+.navbar li a:hover,
+.navbar li a.active {
+    color: white;
+}
+  
+h1{
+     font-family: 'Sacramento', cursive;
+     color: #20A0D8;
+     padding-left: 580px;
+}
+h2{
+    color: #20A0D8;
+    font-weight:normal ;
+    font-family: 'Sacramento',cursive;
+}
+h3{
+    font-family: 'Montserrat',sans-serif;
+    color: #40514E;
+    font-weight: normal;
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    text-align: center;
+}
+h4{
+    font-family: 'Montserrat',sans-serif;
+    color: #40514E;
+    font-weight: normal;
+    text-align: left;
+    width: 80%;
+}
+ul{
+    position: relative;
+    margin-left: 6.5%;
+    color: #40514E;
+}
+li{
+    position: relative;
+    margin-left: 0%;
+    padding-left: 0;
+    padding-right: 0;
+    color: #40514E;
+}
+.partner{
+    margin-left: 0; 
+}
+.second_title{
+    position: relative;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.second{
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    margin-top: 5%;
+    padding-left: 11%;
+}
